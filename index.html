@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Фускум-Торф — сфагновый торф с Сахалина</title>
+  <meta name="description" content="ООО «Фускум-Торф» добывает и перерабатывает сфагновый торф на Сахалине: 720 га полей, запасы 15,7 млн м³, полный цикл от поля до упаковки.">
+  <meta property="og:title" content="Фускум-Торф — сфагновый торф с Сахалина">
+  <meta property="og:description" content="Добыча и переработка торфа на собственном месторождении в Анивском районе Сахалинской области.">
+  <meta property="og:image" content="assets/img/site.jpg">
+  <link rel="icon" href="assets/img/favicon.png">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar" id="topbar">
+  <a class="logo" href="#top" data-i18n-attr="aria-label:logo.home" aria-label="Фускум-Торф, на главную">
+    <img class="logo-cream" src="assets/img/logo-cream.png" alt="Fuscum-Torf, Sakhalin Peat" width="520" height="329">
+    <img class="logo-green" src="assets/img/logo-green.png" alt="" width="520" height="329">
+  </a>
+  <nav class="nav" data-i18n-attr="aria-label:nav.label" aria-label="Разделы сайта">
+    <a href="#about" data-i18n="nav.about">О компании</a>
+    <a href="#process" data-i18n="nav.process">Производство</a>
+    <a href="#product" data-i18n="nav.product">Продукт</a>
+    <a href="#history" data-i18n="nav.history">История</a>
+    <a href="#contacts" data-i18n="nav.contacts">Контакты</a>
+  </nav>
+  <div class="lang" role="group" data-i18n-attr="aria-label:lang.label" aria-label="Язык сайта">
+    <button type="button" data-lang="ru" lang="ru" aria-label="Русский">RU</button>
+    <button type="button" data-lang="en" lang="en" aria-label="English">EN</button>
+    <button type="button" data-lang="zh" lang="zh" aria-label="中文">中文</button>
+  </div>
+  <button class="btn btn-top" type="button" data-open-contact data-i18n="cta.write">Написать нам</button>
+</header>
+
+<main id="top">
+
+  <section class="hero" id="hero">
+    <div class="hero-stage">
+      <div class="hero-frame">
+        <video class="hero-video" id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/img/poster.jpg" data-i18n-attr="aria-label:hero.video" aria-label="Видео о компании: торфяные поля, добыча и завод на Сахалине">
+          <source src="assets/video/fuscum-1200.mp4" type="video/mp4">
+        </video>
+        <script>
+          // Лёгкая версия для телефонов. Атрибут media у source не работает в Safari
+          if (window.matchMedia("(max-width: 760px)").matches) {
+            document.getElementById("heroVideo").src = "assets/video/fuscum-960.mp4";
+          }
+        </script>
+        <div class="hero-shade"></div>
+        <div class="video-controls">
+          <button type="button" id="soundToggle" aria-pressed="false">Включить звук</button>
+          <button type="button" id="playToggle" aria-pressed="false">Пауза</button>
+        </div>
+      </div>
+      <div class="hero-text">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Анивский район, Сахалинская область</p>
+        <h1 data-i18n="hero.title">Сфагновый торф с&nbsp;Сахалина</h1>
+        <p class="hero-lead" data-i18n="hero.lead">Добываем и перерабатываем торф на собственном месторождении: полный цикл от поля до упаковки.</p>
+        <div class="hero-actions">
+          <button class="btn" type="button" data-open-contact data-i18n="cta.write">Написать нам</button>
+          <a class="btn btn-ghost" href="#about" data-i18n="nav.about">О компании</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats" data-i18n-attr="aria-label:stats.label" aria-label="Компания в цифрах">
+    <dl class="stats-grid" id="stats" data-stagger>
+      <div><dt data-i18n="stats.area.label">Торфяные поля</dt><dd data-i18n="stats.area"><span data-count="720">720</span> га</dd></div>
+      <div><dt data-i18n="stats.reserves.label">Запасы торфа</dt><dd data-i18n="stats.reserves"><span data-count="15.7" data-decimals="1">15,7</span> млн м³</dd></div>
+      <div><dt data-i18n="stats.output.label">Производство в год</dt><dd data-i18n="stats.output"><span data-count="250000">250 000</span> м³</dd></div>
+      <div><dt data-i18n="stats.port.label">До порта Корсаков</dt><dd data-i18n="stats.port"><span data-count="30">30</span> км</dd></div>
+    </dl>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="wrap">
+      <p class="eyebrow" data-i18n="nav.about">О компании</p>
+      <h2 class="statement" id="statement" data-i18n="about.statement">Мы сами добываем торф на Сахалине, сами его перерабатываем и сами упаковываем.</h2>
+      <div class="about-grid">
+        <div class="about-text" data-stagger>
+          <p data-i18n="about.p1">ООО «Фускум-Торф» работает на юге Сахалина с&nbsp;2018 года. Учредитель компании, ООО «Восток-Курилы», занимается гражданским строительством с&nbsp;2007 года.</p>
+          <p data-i18n="about.p2">Мы разрабатываем участок «Средний» Озерецко-Песочного месторождения. Он находится в&nbsp;Анивском районе, в&nbsp;2&nbsp;км от села Мицулевка и&nbsp;в&nbsp;10&nbsp;км от Южно-Сахалинска.</p>
+          <p data-i18n="about.p3">Здесь всё построено под торф: подъездная дорога, мост через реку Средняя, линия электропередачи и&nbsp;завод с&nbsp;собственной производственной линией.</p>
+        </div>
+        <figure class="reveal">
+          <div class="zoom" data-zoom><img src="assets/img/site.jpg" data-i18n-attr="alt:about.img" alt="Вид сверху: здание завода и площадка с биг-бэгами торфа" width="1200" height="548"></div>
+          <figcaption data-i18n="about.caption">Завод и площадка готовой продукции</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="process" id="process">
+    <div class="process-pin">
+      <div class="wrap process-head reveal">
+        <p class="eyebrow" data-i18n="nav.process">Производство</p>
+        <h2 data-i18n="process.title">От поля до порта</h2>
+      </div>
+      <ol class="steps" id="steps">
+        <li>
+          <img src="assets/img/fleet.jpg" data-i18n-attr="alt:process.1.img" alt="Техника на торфяном поле, вид сверху" width="1200" height="548">
+          <h3 data-i18n="process.1.title">Поля</h3>
+          <p data-i18n="process.1.text">Торфяные поля площадью 720&nbsp;га готовит и&nbsp;обслуживает наша спецтехника.</p>
+        </li>
+        <li>
+          <img src="assets/img/excavator.jpg" data-i18n-attr="alt:process.2.img" alt="Экскаватор загружает торф в контейнер" width="1200" height="548">
+          <h3 data-i18n="process.2.title">Добыча</h3>
+          <p data-i18n="process.2.text">Сезон добычи идёт с&nbsp;июня по&nbsp;сентябрь.</p>
+        </li>
+        <li>
+          <img src="assets/img/factory.jpg" data-i18n-attr="alt:process.3.img" alt="Торф на конвейере производственной линии" width="1200" height="548">
+          <h3 data-i18n="process.3.title">Переработка</h3>
+          <p data-i18n="process.3.text">На заводе торф перерабатывают и&nbsp;разделяют на&nbsp;фракции.</p>
+        </li>
+        <li>
+          <img src="assets/img/loading.jpg" data-i18n-attr="alt:process.4.img" alt="Погрузчик перевозит прессованный блок торфа" width="1200" height="548">
+          <h3 data-i18n="process.4.title">Упаковка и&nbsp;отгрузка</h3>
+          <p data-i18n="process.4.text">Биг-бэги на&nbsp;поддонах идут автотранспортом в&nbsp;порт Корсаков, дальше морем.</p>
+        </li>
+      </ol>
+      <div class="process-bar" aria-hidden="true"><span id="processBar"></span></div>
+    </div>
+  </section>
+
+  <section class="section product" id="product">
+    <div class="wrap product-grid">
+      <div>
+        <p class="eyebrow reveal" data-i18n="nav.product">Продукт</p>
+        <h2 class="reveal" data-i18n="product.title">Сфагновый торф низкой степени разложения</h2>
+        <table class="spec">
+          <caption class="sr-only" data-i18n="product.caption">Характеристики торфа</caption>
+          <tbody data-stagger>
+            <tr><th scope="row" data-i18n="spec.decomposition">Степень разложения</th><td>≤ 20% (H2)</td></tr>
+            <tr><th scope="row" data-i18n="spec.organic">Органическое вещество</th><td>≥ 90%</td></tr>
+            <tr><th scope="row" data-i18n="spec.ash">Зольность</th><td>≤ 10%</td></tr>
+            <tr><th scope="row" data-i18n="spec.phkcl">Кислотность, pH (KCl)</th><td data-i18n="spec.phkcl.value">2,5–3,5</td></tr>
+            <tr><th scope="row" data-i18n="spec.phh2o">Кислотность, pH (H₂O)</th><td data-i18n="spec.phh2o.value">3,0–4,1</td></tr>
+            <tr><th scope="row" data-i18n="spec.moisture">Влажность</th><td>45–60%</td></tr>
+            <tr><th scope="row" data-i18n="spec.capacity">Влагоёмкость</th><td>≥ 600%</td></tr>
+            <tr><th scope="row" data-i18n="spec.density">Насыпная плотность (сухое вещество)</th><td data-i18n="spec.density.value">≤ 150 кг/м³</td></tr>
+            <tr><th scope="row" data-i18n="spec.conductivity">Электропроводность</th><td data-i18n="spec.conductivity.value">≤ 0,18 мСм/см</td></tr>
+            <tr><th scope="row" data-i18n="spec.porosity">Пористость</th><td data-i18n="spec.porosity.value">до 95%</td></tr>
+            <tr><th scope="row" data-i18n="spec.wood">Древесные включения</th><td>≤ 1%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="product-side">
+        <div class="zoom reveal" data-zoom><img src="assets/img/press.jpg" data-i18n-attr="alt:product.img" alt="Прессованный блок торфа в упаковочной линии" width="1200" height="548"></div>
+        <h3 class="reveal" data-i18n="product.fractions">Фракции</h3>
+        <ul class="chips" data-stagger>
+          <li>0–10 <span data-i18n="unit.mm">мм</span></li>
+          <li>0–40 <span data-i18n="unit.mm">мм</span></li>
+          <li>10–20 <span data-i18n="unit.mm">мм</span></li>
+          <li>20–40 <span data-i18n="unit.mm">мм</span></li>
+        </ul>
+        <h3 class="reveal" data-i18n="product.packaging">Упаковка</h3>
+        <p class="reveal" data-i18n="product.packaging.text">Биг-бэг 1000 × 1200 × 2000&nbsp;мм, объём 5&nbsp;м³, вес 900&nbsp;кг.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section uses" id="uses">
+    <div class="wrap">
+      <p class="eyebrow reveal" data-i18n="uses.eyebrow">Применение</p>
+      <h2 class="reveal" data-i18n="uses.title">Где работает наш торф</h2>
+      <ul class="uses-list" data-stagger>
+        <li><h3 data-i18n="uses.1.title">Растениеводство</h3><p data-i18n="uses.1.text">Выращивание в&nbsp;теплицах и&nbsp;в&nbsp;открытом грунте.</p></li>
+        <li><h3 data-i18n="uses.2.title">Субстраты и питательные среды</h3><p data-i18n="uses.2.text">Высокая аэрация, пористость до&nbsp;95%.</p></li>
+        <li><h3 data-i18n="uses.3.title">Удобрение и мульчирование</h3><p data-i18n="uses.3.text">Гуминовые кислоты стимулируют рост растений, а&nbsp;затраты на&nbsp;полив и&nbsp;минеральные удобрения снижаются.</p></li>
+        <li><h3 data-i18n="uses.4.title">Прессованные изделия</h3><p data-i18n="uses.4.text">Блоки, таблетки и&nbsp;гранулы.</p></li>
+        <li><h3 data-i18n="uses.5.title">Сорбент</h3><p data-i18n="uses.5.text">Сбор нефтепродуктов при&nbsp;разливах.</p></li>
+        <li><h3 data-i18n="uses.6.title">Подстилка для животных</h3><p data-i18n="uses.6.text">Подстилка первого класса для&nbsp;животноводства.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="band" id="band">
+    <div class="band-stage">
+      <img src="assets/img/loader.jpg" data-i18n-attr="alt:band.img" alt="Погрузчик перемещает торф на штабеле" width="1200" height="548">
+      <p class="band-caption" data-i18n="band.caption">Сезон добычи: июнь — сентябрь</p>
+    </div>
+  </section>
+
+  <section class="section history" id="history">
+    <div class="wrap">
+      <p class="eyebrow reveal" data-i18n="nav.history">История</p>
+      <h2 class="reveal" data-i18n="history.title">Как строился проект</h2>
+      <ol class="timeline" id="timeline" data-stagger>
+        <li><b>2018</b><span data-i18n="history.2018">Старт проекта, выбор торфяника, исследование ресурсов</span></li>
+        <li><b>2019</b><span data-i18n="history.2019">Детальное исследование качества торфа, разрешения и&nbsp;лицензия</span></li>
+        <li><b>2020</b><span data-i18n="history.2020">Закупка техники для подготовки полей, строительство моста через реку</span></li>
+        <li><b>2021</b><span data-i18n="history.2021">Строительство дороги к&nbsp;торфянику</span></li>
+        <li><b>2022</b><span data-i18n="history.2022">Проектирование разработки, подготовка полей</span></li>
+        <li><b>2023</b><span data-i18n="history.2023">Подготовка площадки под завод, заказ производственной линии</span></li>
+        <li><b>2024</b><span data-i18n="history.2024">Первый сезон добычи, строительство здания завода</span></li>
+        <li><b>2025</b><span data-i18n="history.2025">Запуск завода и&nbsp;производственной линии</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section contacts" id="contacts">
+    <div class="wrap contacts-grid">
+      <div class="reveal">
+        <p class="eyebrow" data-i18n="nav.contacts">Контакты</p>
+        <h2 data-i18n="contacts.title">Свяжитесь с&nbsp;нами</h2>
+        <p class="contact-line"><a href="tel:+74242726344" data-i18n="contacts.phone">8 (4242) 72-63-44</a></p>
+        <p class="contact-line"><a href="mailto:vostokdsm@inbox.ru">vostokdsm@inbox.ru</a></p>
+        <p data-i18n="contacts.address">693017, Сахалинская область, Анивский район, тер. Фускум-Торф, ул. Недропользователей, зд. 1</p>
+        <button class="btn" type="button" data-open-contact data-i18n="cta.write">Написать нам</button>
+      </div>
+      <dl class="requisites" data-stagger>
+        <div><dt data-i18n="req.name.label">Полное название</dt><dd data-i18n="req.name">ООО «Фускум-Торф»</dd></div>
+        <div><dt data-i18n="req.director.label">Директор</dt><dd data-i18n="req.director">Котляр Александр Николаевич</dd></div>
+        <div><dt data-i18n="req.inn.label">ИНН</dt><dd>6504022808</dd></div>
+        <div><dt data-i18n="req.kpp.label">КПП</dt><dd>650401001</dd></div>
+        <div><dt data-i18n="req.ogrn.label">ОГРН</dt><dd>1186501008616</dd></div>
+      </dl>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-row">
+    <img src="assets/img/logo-cream.png" alt="" width="520" height="329" loading="lazy">
+    <p data-i18n="footer.copy">© 2018–2026 ООО «Фускум-Торф»</p>
+  </div>
+</footer>
+
+<dialog class="contact" id="contactDialog" aria-labelledby="contactTitle">
+  <form id="contactForm" action="send.php" method="post" novalidate>
+    <button class="contact-close" type="button" id="contactClose" data-i18n-attr="aria-label:form.close" aria-label="Закрыть">×</button>
+    <h2 id="contactTitle" data-i18n="cta.write">Написать нам</h2>
+    <p class="contact-note" data-i18n="form.note">Сообщение придёт на почту компании, и мы ответим на указанный адрес.</p>
+
+    <label><span data-i18n="form.name">Имя</span>
+      <input name="name" type="text" autocomplete="name" maxlength="120" required>
+    </label>
+    <label><span data-i18n="form.email">Электронная почта</span>
+      <input name="email" type="email" autocomplete="email" maxlength="160" required>
+    </label>
+    <label><span data-i18n="form.phone">Телефон, по желанию</span>
+      <input name="phone" type="tel" autocomplete="tel" maxlength="40">
+    </label>
+    <label><span data-i18n="form.message">Сообщение</span>
+      <textarea name="message" rows="5" maxlength="4000" required></textarea>
+    </label>
+    <label class="hp" aria-hidden="true">Сайт
+      <input name="website" type="text" tabindex="-1" autocomplete="off">
+    </label>
+    <label class="consent">
+      <input name="consent" type="checkbox" required>
+      <span data-i18n="form.consent">Даю согласие на обработку персональных данных для ответа на это сообщение</span>
+    </label>
+
+    <p class="form-status" id="formStatus" role="status"></p>
+    <button class="btn btn-green" type="submit" id="formSubmit" data-i18n="form.send">Отправить</button>
+  </form>
+</dialog>
+
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
